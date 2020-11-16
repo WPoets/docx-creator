@@ -11,7 +11,7 @@
         ), $atts) );
         if(is_null($path)) return;
         
-        $lib_path = 'vendor/autoload.php';
+        $lib_path = AWESOME_PATH.'/vendor/autoload.php';
         require_once $lib_path;
 
         \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
