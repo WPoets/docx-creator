@@ -11,8 +11,8 @@
         ), $atts) );
         if(is_null($path)) return;
         
-        $lib_path = AWESOME_PATH.'/vendor/autoload.php';
-        require_once $lib_path;
+        //$lib_path = AWESOME_PATH.'/vendor/autoload.php';
+       // require_once $lib_path;
 
         \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
         $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor($path);
